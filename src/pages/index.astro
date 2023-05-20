@@ -1,16 +1,8 @@
 ---
 import BasicLayout from "../layouts/basic-layout.astro";
+import DashboardHeader from "../components/dashboard-header.astro";
 ---
+
 <BasicLayout title="Time Tracking">
-  <header>
-    <div class="profile">
-      <img src="/images/image-jeremy.png" alt="Jeremy's avatar" width="80" />
-      <p><b>Report for</b> <em>Jeremy Robson</em></p>
-    </div>
-    <menu role="list">
-      <li><a href="/daily">Daily</a></li>
-      <li><a href="/weekly">Weekly</a></li>
-      <li><a href="/monthly">Monthly</a></li>
-    </menu>
-  </header>
+  <DashboardHeader />
 </BasicLayout>
