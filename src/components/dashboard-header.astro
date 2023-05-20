@@ -1,11 +1,55 @@
 <header>
   <div class="profile">
-    <img src="/images/image-jeremy.png" alt="Jeremy's avatar" width="80" />
+    <img src="/images/image-jeremy.png" alt="Jeremy's avatar" width="100" />
     <p><b>Report for</b> <em>Jeremy Robson</em></p>
   </div>
-  <menu role="list">
+  <menu role="list" class="primary-navigation">
     <li><a href="/daily">Daily</a></li>
     <li><a href="/weekly">Weekly</a></li>
     <li><a href="/monthly">Monthly</a></li>
   </menu>
 </header>
+
+<style>
+  header {
+    --radius: 1em;
+    --padding: 1.5em;
+    --spacing: 1em;
+
+    background-color: var(--clr-neutral-300);
+    border-radius: var(--radius);
+  }
+
+  .profile {
+    background-color: var(--clr-blue-200);
+    padding: var(--padding);
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+  }
+
+  .profile > img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+  }
+
+  .profile > p {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.25rem;
+  }
+
+  .profile > p > b {
+    font-size: 0.7em;
+    color: var(--clr-neutral-100)
+  }
+
+  .primary-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1ch;
+    padding: var(--padding);
+  }
+</style>

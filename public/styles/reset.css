@@ -14,3 +14,7 @@
 menu li {
   list-style: none;
 }
+
+[role="list"] a {
+  text-decoration: none;
+}
