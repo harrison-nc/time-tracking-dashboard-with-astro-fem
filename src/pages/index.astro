@@ -4,9 +4,23 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main.css">
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+      <header>
+        <div class="profile">
+          <img src="/images/image-jeremy.png" alt="Jeremy's avatar" width="80">
+          <p><b>Report for</b> <em>Jeremy Robson</em></p>
+        </div>
+        <menu role="list">
+          <li><a href="/daily">Daily</a></li>
+          <li><a href="/weekly">Weekly</a></li>
+          <li><a href="/monthly">Monthly</a></li>
+        </menu>
+      </header>
+    </main>
 	</body>
 </html>
