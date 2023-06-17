@@ -29,9 +29,16 @@ let lastWeekTime = Astro.props.lastWeekTime;
     margin-top: 1.5em;
   }
 
+  @media(min-width: 400px) {
+    .dashboard-item {
+      margin-top: 0;
+    }
+  }
+
   .dashboard-item > div {
     display: flex;
     align-items: center;
+    gap: 1em;
     justify-content: space-between;
   }
 

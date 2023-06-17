@@ -47,5 +47,26 @@ body {
   gap: 1em;
   align-items: center;
   justify-content: center;
-  padding: var(--padding);
+  padding: 2rem;
+}
+
+body > * {
+  flex: 1 0;
+}
+
+.even-columns {
+  display: flex;
+  flex-flow: column;
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+@media screen and (min-width: 600px) {
+  .even-columns {
+    flex-flow: row;
+  }
+
+  .even-columns > * {
+    flex: 1 0 200px;
+  }
 }
