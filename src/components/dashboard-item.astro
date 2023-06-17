@@ -1,0 +1,45 @@
+---
+let title = Astro.props.title;
+let currentTime = Astro.props.currentTime;
+let lastWeekTime = Astro.props.lastWeekTime;
+---
+
+<div class="dashboard-item">
+  <div>
+    <em>{title}</em><img src="/images/icon-ellipsis.svg" />
+  </div>
+  <div>
+    <span>{currentTime}hrs</span>
+    <span>Last Week 
+      <span>{lastWeekTime}hrs</span>
+    </span>
+  </div>
+</div>
+
+<style>
+  .dashboard-item {
+    --spacing: 1.65em;
+    
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+    padding: var(--spacing);
+    background-color: var(--clr-neutral-300);
+    border-radius: var(--radius);
+    margin-top: 1.5em;
+  }
+
+  .dashboard-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashboard-item > div:last-child > :first-child {
+    font-size: 1.5em;
+  }
+
+  .dashboard-item > div:last-child :last-child {
+    color: var(--clr-neutral-100)
+  }
+</style>
