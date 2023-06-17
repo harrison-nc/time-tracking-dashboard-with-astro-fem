@@ -20,6 +20,12 @@
     border-radius: var(--radius);
   }
 
+  @media (min-width: 600px) {
+   header {
+    flex: 0 0 var(--basis);
+   } 
+  }
+
   .profile {
     background-color: var(--clr-blue-200);
     padding: var(--padding);
@@ -27,6 +33,12 @@
     display: flex;
     align-items: center;
     gap: var(--spacing);
+  }
+
+  @media (min-width: 600px) {
+    .profile {
+      flex-flow: column;
+    }
   }
 
   .profile > img {
@@ -43,7 +55,7 @@
 
   .profile > p > b {
     font-size: 0.7em;
-    color: var(--clr-neutral-100)
+    color: var(--clr-neutral-100);
   }
 
   .primary-navigation {
@@ -51,5 +63,11 @@
     justify-content: space-between;
     gap: 1ch;
     padding: var(--padding);
+  }
+
+  @media (min-width: 600px) {
+    .primary-navigation {
+      flex-flow: column;
+    }
   }
 </style>

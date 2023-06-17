@@ -1,20 +1,8 @@
 ---
 import BasicLayout from "../layouts/basic-layout.astro";
-import EvenColumns from "../layouts/even-columns.astro";
-import DashboardHeader from "../components/dashboard-header.astro";
-import DashboardItem from "../components/dashboard-item.astro";
+import Dashboard from "../components/dashboard.astro";
 ---
 
 <BasicLayout title="Time Tracking">
-  <DashboardHeader />
-  <EvenColumns>
-    <DashboardItem title="Work" currentTime="32" lastWeekTime="36" />
-    <DashboardItem title="Play" currentTime="10" lastWeekTime="8" />
-    <DashboardItem title="Study" currentTime="4" lastWeekTime="7" />
-  </EvenColumns>
-  <EvenColumns>
-    <DashboardItem title="Exercise" currentTime="4" lastWeekTime="5" />
-    <DashboardItem title="Social" currentTime="5" lastWeekTime="10" />
-    <DashboardItem title="Self Care" currentTime="2" lastWeekTime="2" />
-  </EvenColumns>
+  <Dashboard />
 </BasicLayout>

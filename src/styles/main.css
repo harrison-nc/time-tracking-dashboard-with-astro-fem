@@ -58,7 +58,7 @@ body > * {
   display: flex;
   flex-flow: column;
   gap: var(--spacing);
-  margin-top: var(--spacing);
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 600px) {
