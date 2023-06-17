@@ -53,20 +53,3 @@ body {
 body > * {
   flex: 1 0;
 }
-
-.even-columns {
-  display: flex;
-  flex-flow: column;
-  gap: var(--spacing);
-  flex-grow: 1;
-}
-
-@media screen and (min-width: 600px) {
-  .even-columns {
-    flex-flow: row;
-  }
-
-  .even-columns > * {
-    flex: 1 0 200px;
-  }
-}
