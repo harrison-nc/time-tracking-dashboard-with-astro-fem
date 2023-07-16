@@ -1,7 +1,8 @@
 ---
 let title = Astro.props.title;
-let currentTime = Astro.props.currentTime;
-let lastWeekTime = Astro.props.lastWeekTime;
+let current = Astro.props.current;
+let previous = Astro.props.previous;
+let timeFrame = Astro.props.timeFrame;
 ---
 
 <div class="dashboard-item">
@@ -9,9 +10,9 @@ let lastWeekTime = Astro.props.lastWeekTime;
     <em>{title}</em><img src="/images/icon-ellipsis.svg" />
   </div>
   <div>
-    <span>{currentTime}hrs</span>
-    <span>Last Week 
-      <span>{lastWeekTime}hrs</span>
+    <span>{current}hrs</span>
+    <span>{timeFrame}
+      <span>{previous}hrs</span>
     </span>
   </div>
 </div>

@@ -1,8 +1,16 @@
 ---
 import BasicLayout from "../../layouts/basic-layout.astro";
-import DashboardHeader from "../../components/dashboard-header.astro";
+import Dashboard from "../../components/dashboard.astro";
+import DashboardItem from "../../components/dashboard-item.astro";
 ---
 
 <BasicLayout title="Time Tracking - Monthly">
-  <DashboardHeader />
+  <Dashboard>
+    <DashboardItem title="Work" current="103" previous="128" timeFrame="Last Month" />
+    <DashboardItem title="Play" current="23" previous="29" timeFrame="Last Month" />
+    <DashboardItem title="Study" current="13" previous="19" timeFrame="Last Month" />
+    <DashboardItem title="Exercise" current="11" previous="18" timeFrame="Last Month" />
+    <DashboardItem title="Social" current="21" previous="23" timeFrame="Last Month" />
+    <DashboardItem title="Self Care" current="7" previous="11" timeFrame="Last Month" />
+  </Dashboard>
 </BasicLayout>
