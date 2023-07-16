@@ -2,15 +2,54 @@
 import DashboardItem from "../../components/dashboard-item.astro";
 import Dashboard from "../../components/dashboard.astro";
 import BasicLayout from "../../layouts/basic-layout.astro";
+
+import timeFrames from "../../content/timeFrames/data.json";
+
+const first = timeFrames[0]
+const second = timeFrames[1]
+const third = timeFrames[2]
+const fourth = timeFrames[3]
+const fifth = timeFrames[4]
+const sixth = timeFrames[5]
 ---
 
 <BasicLayout title="Time Tracking - Daily">
   <Dashboard>
-    <DashboardItem title="Work" current="5" previous="7" timeFrame="Yesterday" />
-    <DashboardItem title="Play" current="1" previous="2" timeFrame="Yesterday" />
-    <DashboardItem title="Study" current="0" previous="1" timeFrame="Yesterday" />
-    <DashboardItem title="Exercise" current="1" previous="1" timeFrame="Yesterday" />
-    <DashboardItem title="Social" current="1" previous="3" timeFrame="Yesterday" />
-    <DashboardItem title="Self Care" current="0" previous="1" timeFrame="Yesterday" />
+    <DashboardItem 
+      title={first.title}
+      current={first.current}
+      previous={first.previous}
+      timeFrame={first.timeFrame}
+    />
+    <DashboardItem 
+      title={second.title}
+      current={second.current}
+      previous={second.previous}
+      timeFrame={second.timeFrame}
+    />
+    <DashboardItem 
+      title={third.title}
+      current={third.current}
+      previous={third.previous}
+      timeFrame={third.timeFrame}
+    />
+    <DashboardItem 
+      title={fourth.title}
+      current={fourth.current}
+      previous={fourth.previous}
+      timeFrame={fourth.timeFrame}
+    />
+    <DashboardItem 
+      title={fifth.title}
+      current={fifth.current}
+      previous={fifth.previous}
+      timeFrame={fifth.timeFrame}
+    />
+    <DashboardItem 
+      title={sixth.title}
+      current={sixth.current}
+      previous={sixth.previous}
+      timeFrame={sixth.timeFrame}
+    />
   </Dashboard>
 </BasicLayout>

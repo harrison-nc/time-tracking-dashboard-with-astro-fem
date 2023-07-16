@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Book",
+    "current": 10,
+    "previous": 5,
+    "timeFrame": "Library"
+  },
+  {
+    "title": "Pen",
+    "current": 15,
+    "previous": 6,
+    "timeFrame": "Shop"
+  },
+  {
+    "title": "Ruler",
+    "current": 15,
+    "previous": 6,
+    "timeFrame": "Shop"
+  },
+  {
+    "title": "Sharpner",
+    "current": 15,
+    "previous": 6,
+    "timeFrame": "Shop"
+  },
+  {
+    "title": "Paper",
+    "current": 15,
+    "previous": 6,
+    "timeFrame": "Shop"
+  },
+  {
+    "title": "Pen",
+    "current": 15,
+    "previous": 7,
+    "timeFrame": "Kiosk"
+  }
+]
