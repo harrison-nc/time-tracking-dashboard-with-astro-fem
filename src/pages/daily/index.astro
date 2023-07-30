@@ -3,53 +3,25 @@ import DashboardItem from "../../components/dashboard-item.astro";
 import Dashboard from "../../components/dashboard.astro";
 import BasicLayout from "../../layouts/basic-layout.astro";
 
-import timeFrames from "../../data/data.json";
+// 1. Values => Object, String, Boolean, null, undefined Number, Array, Function
+// 2. Object => Everything except null and undefined
+// 3. Object => properties
+// 4. Propery => Value, Function
 
-const first = timeFrames[0]
-const second = timeFrames[1]
-const third = timeFrames[2]
-const fourth = timeFrames[3]
-const fifth = timeFrames[4]
-const sixth = timeFrames[5]
+// Assignment: For each of the values in #1
+// List at least one value property
+// List at least four methods
+// For each method listed write a sample to demonstrate how the function.
+
+import timeFrames from "../../data/data.json";
 ---
 
 <BasicLayout title="Time Tracking - Daily">
   <Dashboard>
-    <DashboardItem 
-      title={first.title}
-      current={first.current}
-      previous={first.previous}
-      timeFrame={first.timeFrame}
-    />
-    <DashboardItem 
-      title={second.title}
-      current={second.current}
-      previous={second.previous}
-      timeFrame={second.timeFrame}
-    />
-    <DashboardItem 
-      title={third.title}
-      current={third.current}
-      previous={third.previous}
-      timeFrame={third.timeFrame}
-    />
-    <DashboardItem 
-      title={fourth.title}
-      current={fourth.current}
-      previous={fourth.previous}
-      timeFrame={fourth.timeFrame}
-    />
-    <DashboardItem 
-      title={fifth.title}
-      current={fifth.current}
-      previous={fifth.previous}
-      timeFrame={fifth.timeFrame}
-    />
-    <DashboardItem 
-      title={sixth.title}
-      current={sixth.current}
-      previous={sixth.previous}
-      timeFrame={sixth.timeFrame}
-    />
+    {
+      timeFrames.map(function ({ title, current, previous, timeFrame }) {
+        return <DashboardItem {title} {current} {previous} {timeFrame} />;
+      })
+    }
   </Dashboard>
 </BasicLayout>
